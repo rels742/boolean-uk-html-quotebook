@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+header {
+    background-color: #FBEFE0;
+    color: black;
+    padding: 10px;
+    font-family: serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "lyric-container"
+    "author-container"
+    "life-container";
+
+    margin: 100px;
+    height: 100vh;
+    grid-gap: 50px;
+}
+
+.lyric-container {
+    grid-area: lyric-container;
+    display: grid;
+    place-items: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-container {
+    grid-area: author-container;
+    display: grid;
+    place-items: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.life-container {
+    grid-area: life-container;
+    display: grid;
+    place-items: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.lyric-box-quote {
+    background-color: #8bf0ba;
+    color: #fff;
+    border-radius: 0.375rem;
+    width: 31.25rem;
+    padding: 0.625rem;
+    margin: 1.25rem 0;
+    box-shadow: 2px 2px 6px 2px lightgrey;
+}
+
+.author-box-quote {
+    background-color: #94f0f1;
+    color: #fff;
+    width: 31.25rem;
+    border-radius: 0.375rem;
+    padding: 0.625rem;
+    margin: 1.25rem 0;
+    box-shadow: 2px 2px 6px 2px lightgrey;
+}
+
+.life-box-quote {
+    background-color: #ffdc6a;
+    color: #fff;
+    width: 31.25rem;
+    border-radius: 0.375rem;
+    padding: 0.625rem;
+    margin: 1.25rem 0;
+    box-shadow: 2px 2px 6px 2px lightgrey;
+}
+
+.quote {
+    display: grid;
+    place-items: center;
+    font-style: italic;
+}
+
+.name {
+    display: grid;
+    place-items: end;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-right: 1.25rem;
+}
